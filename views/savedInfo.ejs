@@ -1,0 +1,110 @@
+<!doctype html>
+<html>
+    <head>
+
+        <!--Always lode angular first and then all other scripts-->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script src="../javascripts/angular.min.js"></script>
+		<script src="../javascripts/angular-route.min.js"></script>
+		<!--<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>-->
+        <!--<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-route.min.js"></script>-->
+        <script type="text/javascript" src="javascripts/infoApp.js"></script>
+
+
+    </head>
+    <!--<style>body{font-family:"Arial";background-color:#E2E2DC}</style>-->
+    <body ng-app="patientInfo" ng-controller="InfoController"  >
+		<div style="padding-left: 10px">
+			<h2>Patient Directory</h2>
+
+			input search
+			<div class="col-lg-6">
+				<div class="input-group">
+				  <input type="text" ng-model="searchKeyword" class="form-control" placeholder="Search for patients...">
+				  <span class="input-group-btn">
+					<button class="btn btn-default" type="button">Search</button>
+				  </span>
+				</div><!-- /input-group -->
+			  </div><!-- /.col-lg-6 -->
+
+			<br>
+			<br>
+			<table class="table">
+				<!--this is the heading for the table-->
+				<tr>
+					<th>Student's Name
+					</th>
+					<th>Father's Name
+					</th>
+					<th>Mother's Name
+					</th>
+					<th>Date Of Birth
+					</th>
+					<th>Gender
+					</th>
+					<th>Caste
+					</th>
+					<th>Phone
+					</th>
+					<th>Income Certificate
+					</th>
+					<th>Annual Income
+					</th>
+					<th>Email ID
+					</th>
+					<th>Other Info
+					</th>
+					<th>Action
+					</th>
+				</tr>
+				<!--this is the content from the backend-->
+				<tr ng-repeat="patient in patients  | filter: searchKeyword ">
+					<td>
+					{{patient.studentname}}
+					</td>
+					<td>{{patient.fathername}}
+					</td>
+					<td>{{patient.mothername}}
+					</td>
+					<td>{{patient.dob}}
+					</td>
+					<td>{{patient.gender}}
+					</td>
+					<td>{{patient.caste}}
+					</td>
+					<td>{{patient.phone}}
+					</td>
+					<td>{{patient.incomecert}}
+					</td>
+					<td>{{patient.annualIncome}}
+					</td>
+					<td>{{patient.email}}
+					</td>
+					<td>{{patient.info}}
+					</td>
+					<td>
+						<input type="button" value="Remove" class="btn btn-primary" ng-click="removeRow(patient)"/>
+					</td>
+				</tr>
+			</table>
+         </div>
+    </body>
+</html>
+
+
+
+<!-- 
+Screen 1: A patient entry screen with fields like 
+firstname,
+ lastname,
+  age,
+   dob,
+    gender (dropdown),
+     phone,
+      free text information.
+       A submit button should validate and put the information in the database. Validation of fields are mandatory.
+Screen 2: A patient directory which shows a list of patients, with local search functionality based on patient name.
+
+ -->
+
