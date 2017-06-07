@@ -9,7 +9,6 @@ var app = angular.module('patientSubmit',[]);
 				if(  !(/^(0?[1-9]|[12][0-9]|3[01])[\/\-](0?[1-9]|1[012])[\/\-]\d{4}$/.test( $scope.dob ) ) ) {
 					$scope.dobtrue = true;
                     alert("Date not entered properly,try again !!");
-
                 }
 				// else if(  !(/^\d+$/.test($scope.age) ) ){
     //             console.log("came here in age");
@@ -62,8 +61,10 @@ var app = angular.module('patientSubmit',[]);
                     $scope.pInfo ="";
                     $scope.email ="";
                     $scope.annualincome ="";
-                    // $scope.phone ="";
-                    
+
+
+                    // $http.get('https://sendotp.msg91.com/api/generateOTP',mobile, config).then(successCallback, errorCallback);
+                    // $http.post('/someUrl', data, config).then(successCallback, errorCallback);
 
 
                     //posting the data to saves.js where it handles this to save data in the data base.
