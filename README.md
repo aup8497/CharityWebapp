@@ -1,18 +1,19 @@
 # Students Scholarship portal
 
-	This is a website which allows students to apply for scholarships in their 10th/12th grade 
-
+	This is a website which allows students to apply for scholarships in their 10th/12th grade
+	The website is hosted on [http://krgma-scholarship-portal1.herokuapp.com](http://krgma-scholarship-portal1.herokuapp.com)
+	
 ## How to use
 
-```
-To start the website
+To start the website locally
+
 ```bash
 $ npm bin/www
 ```
 
-
 ##Requirements
-  - npm
+  - npm -> NodeJs,ExpressJs
+  - AngularJS
   - mongoDB
 
 ##The MIT LICENSE
