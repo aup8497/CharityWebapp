@@ -1,7 +1,8 @@
 # Students Scholarship portal
 
-	This is a website which allows students to apply for scholarships in their 10th/12th grade
-	The website is hosted on [http://krgma-scholarship-portal1.herokuapp.com](http://krgma-scholarship-portal1.herokuapp.com)
+This is a website which allows students to apply for scholarships in their 10th/12th grade
+<br>
+The website is hosted [here](http://krgma-scholarship-portal1.herokuapp.com)
 	
 ## How to use
 
