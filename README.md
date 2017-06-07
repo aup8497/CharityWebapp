@@ -12,13 +12,14 @@ To start the website locally
 $ npm bin/www
 ```
 
-##Requirements
-  - npm -> NodeJs,ExpressJs
-  - AngularJS
-  - mongoDB
+## Requirements
 
-##The MIT LICENSE
+	- npm -> NodeJs,ExpressJs
+	- AngularJS
+	- mongoDB
 
+<br>
+## The MIT LICENSE
 >MIT License
 
 >Copyright (c) 2017 Optimus_prime (aup8497)
@@ -40,3 +41,4 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
